@@ -49,3 +49,9 @@ const cardArray = [
         img: './images/pizza.jpeg'
     }
 ]
+
+const grid = document.querySelector('.grid')
+const resultDisplay = document.querySelector('#result')
+let cardsChosen = []
+let cardsChosenId = []
+let cardsWon = []
