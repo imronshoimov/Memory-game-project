@@ -55,3 +55,15 @@ const resultDisplay = document.querySelector('#result')
 let cardsChosen = []
 let cardsChosenId = []
 let cardsWon = []
+
+// create your board
+function createBoard() {
+    for (let i = 0; i < cardArray.length; i++ ) {
+            let card = document.createElement('img')
+            card.classList.add('images-size')
+            card.setAttribute('src', './images/blank.jpg')
+            card.setAttribute('data-id', i)
+            card.addEventListener('click', flipcard)
+            grid.appendChild(card)
+    }
+}
