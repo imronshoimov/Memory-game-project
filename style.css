@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.images-size {
+    width: 200px;
+    height: 180px;
+    margin: 1px;
+}
