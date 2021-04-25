@@ -67,3 +67,27 @@ function createBoard() {
             grid.appendChild(card)
     }
 }
+
+// check for matches
+
+function checkForMatch() {
+    let cards = document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId = cardsChosenId[1]
+    if(cardsChosen[0] === cardsChosen[1]) {
+        alert("You found a match")
+        cards[optionOneId].setAttribute('src', './images/white.jpg')
+        cards[optionTwoId].setAttribute('src', './images/white.jpg')
+        cardsWon.push(cardsChosen)
+    } else {
+        cards[optionOneId].setAttribute('src', './images/blank.jpg')
+        cards[optionTwoId].setAttribute('src', './images/blank.jpg')
+        alert('Sorry, try again')
+    }
+    cardsChosen = []
+    cardsChosenId = []
+    resultDisplay.textContent = cardsWon.length
+    if(cardsWon.length === cardArray.length/2) {
+        resultDisplay.textContent = 'Congratulations! You found them all!'
+    }
+}
