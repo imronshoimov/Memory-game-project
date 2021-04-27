@@ -16,13 +16,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    height: 100vh;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 610px;
+    border: 2px solid rgb(78, 76, 76);
 }
 
 .images-size {
